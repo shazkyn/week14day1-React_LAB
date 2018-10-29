@@ -3,8 +3,10 @@ import React, { Component } from "react";
 class Film extends Component {
     render(){
         return 
-        <div className="comment-box">
-            Hello, world! I am a film thingy.
+        <div className="Movie">
+            <h3 className="movie-title">{this.props.title}</h3>
+            <a href={this.props.link} className="url">More Info</a>
+            
         </div>
         
     }
