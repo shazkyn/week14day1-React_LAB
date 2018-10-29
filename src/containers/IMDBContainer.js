@@ -1,9 +1,10 @@
 
 import React, { Component } from 'react';
 import FilmContainer from '../components/FilmContainer.js'
+import 
 
 class IMDBContainer extends Component {
-    constructor(props) {
+    constructor(props){
         super(props);
         this.state = {
             data: [{
@@ -36,11 +37,12 @@ class IMDBContainer extends Component {
     render() {
         return 
         <div className="IMDB-container">
-            <p>New This Week</p>
+            <h3>New This Week</h3>
             <FilmContainer data={this.state.data} />
         </div>
     }
-}      
+}
+  
 
 
 export default IMDBContainer;
