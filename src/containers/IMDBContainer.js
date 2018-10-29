@@ -33,8 +33,14 @@ class IMDBContainer extends Component {
                 }
             ]}
         }
+    render() {
+        return 
+        <div className="IMDB-container">
+            <p>New This Week</p>
+            <FilmContainer data={this.state.data} />
+        </div>
+    }
+}      
 
-        
-}
 
 export default IMDBContainer;
